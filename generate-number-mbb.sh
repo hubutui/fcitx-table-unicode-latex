@@ -18,16 +18,16 @@ sed -i 's/Bbb/mbb/' number-mbb.html
 
 mv number-mbb.html number-eng-mbb.html
 cp number-eng-mbb.html number-arabic-mbb.html
-sed -i 's/zero/0/' number-arabic-mbb.html
-sed -i 's/one/1/' number-arabic-mbb.html
-sed -i 's/two/2/' number-arabic-mbb.html
-sed -i 's/three/3/' number-arabic-mbb.html
-sed -i 's/four/4/' number-arabic-mbb.html
-sed -i 's/five/5/' number-arabic-mbb.html
-sed -i 's/six/6/' number-arabic-mbb.html
-sed -i 's/seven/7/' number-arabic-mbb.html
-sed -i 's/eight/8/' number-arabic-mbb.html
-sed -i 's/nine/9/' number-arabic-mbb.html
+sed -i 's/zero/0   /' number-arabic-mbb.html
+sed -i 's/one/1  /' number-arabic-mbb.html
+sed -i 's/two/2  /' number-arabic-mbb.html
+sed -i 's/three/3    /' number-arabic-mbb.html
+sed -i 's/four/4   /' number-arabic-mbb.html
+sed -i 's/five/5   /' number-arabic-mbb.html
+sed -i 's/six/6  /' number-arabic-mbb.html
+sed -i 's/seven/7    /' number-arabic-mbb.html
+sed -i 's/eight/8    /' number-arabic-mbb.html
+sed -i 's/nine/9   /' number-arabic-mbb.html
 
 # 最后的清理工作
 rm -f *.tmp
