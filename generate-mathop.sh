@@ -14,6 +14,9 @@ sed -i 's/}//' value.tmp
 
 paste -d" " value.tmp usv.tmp > mathop.html
 
+# 发现 Bbb 其实就是黑板粗体，有重复了，删除掉．
+sed -i '/Bbb/d' mathop.html
+
 # 最后的清理工作
 rm -f *.tmp
 
