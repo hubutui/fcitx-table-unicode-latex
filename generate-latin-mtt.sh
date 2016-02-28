@@ -17,4 +17,3 @@ paste -d" " value.tmp usv.tmp > latin-mtt.html
 # 最后的清理工作
 rm -f *.tmp
 
-
