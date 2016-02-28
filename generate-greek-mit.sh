@@ -1,10 +1,9 @@
 #!/bin/sh
 # 由 unicode-math-table.tex 生成斜体的小写希腊字母对应的码表
 #
-sed -e '/mathalpha/!d' -e '/italic/!d' -e '/small/!d' -e '/mit/!d' unicode-math-table.tex > greek-mit.html
-sed -i '/mit[a-z] /d' greek-mit.html
-sed -i '/mbf/d' greek-mit.html
+sed -e '/mit[a-z][a-z]/!d' -e '/mathalpha/!d' unicode-math-table.tex > greek-mit.html
 sed -i '/mitsans/d' greek-mit.html
+sed -i '/mitvar[A-Z]/d' greek-mit.html
 cut -f 1 -d"}" greek-mit.html > usv.tmp
 cut -f 2 -d'"' usv.tmp > tmpfile
 mv tmpfile usv.tmp
