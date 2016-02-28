@@ -4,7 +4,7 @@
 #
 sed '/mathord/!d' unicode-math-table.tex > mathord.html
 # 删掉与其他脚本生成结果重复的内容
-sed -i -e '/Bbb/d' -e '/mbf/d' -e '/mit/d' -e '/msans/d' -e '/mtt/d' mathord.html
+sed -i '/digit/d' mathord.html
 cut -f 1 -d"}" mathord.html > usv.tmp
 cut -f 2 -d'"' usv.tmp > tmpfile
 mv tmpfile usv.tmp
