@@ -14,7 +14,6 @@ cut -f3 -d"{" number-msans.html > value.tmp
 sed -i 's/}//' value.tmp
 
 paste -d" " value.tmp usv.tmp > number-msans.html
-sed -i 's/Bbb/msans/' number-msans.html
 
 mv number-msans.html number-eng-msans.html
 cp number-eng-msans.html number-arabic-msans.html
