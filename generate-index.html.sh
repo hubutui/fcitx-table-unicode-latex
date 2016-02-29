@@ -3,6 +3,8 @@
 # 其中 mcal 会和 mscr 分开，number 也会分开
 # 最后，根据需要合并 index-mcal.html，index-mscr.html
 # 以及 index-number-arabic.html，index-number-eng.html 到 index.html 即可
+# 考虑到数学公式中的无衬线字体比较少用到，于是也分一个 index-sans.html
+# 该文件同时包含无衬线的字母和数字
 #
 cat greek-lower-upright.html > index.html
 cat greek-upper-upright.html >> index.html
@@ -29,6 +31,7 @@ cat mathord.html >> index.html
 cat mathrel.html >> index.html
 cat mfrak-mbf.html >> index.html
 cat mfrak-upright.html >> index.html
+cat alpha-mbb.html >> index.html
 cat misc.html >> index.html
 cat subscripts-and-superscripts.html >> index.html
 
@@ -45,4 +48,19 @@ cat number-arabic-mtt.html >> index-number-arabic.html
 cat number-eng-mbb.html > index-number-eng.html
 cat number-eng-mbf.html >> index-number-eng.html
 cat number-eng-mtt.html >> index-number-eng.html
+
+cat greek-lower-mbfitsans.html > index-sans.html
+cat greek-lower-mbfsans.html >> index-sans.html
+cat greek-upper-mbfitsans.html >> index-sans.html
+cat greek-upper-mbfsans.html >> index-sans.html
+cat latin-lower-mbfitsans.html >> index-sans.html
+cat latin-lower-mbfsans.html >> index-sans.html
+cat latin-lower-msans-upright.html >> index-sans.html
+cat latin-upper-mbfitsans.html >> index-sans.html
+cat latin-upper-mbfsans.html >> index-sans.html
+cat latin-upper-msans-upright.html >> index-sans.html
+cat number-arabic-mbfsans.html >> index-sans.html
+cat number-arabic-msans.html >> index-sans.html
+cat number-eng-mbfsans.html >> index-sans.html
+cat number-eng-msans.html >> index-sans.html
 
