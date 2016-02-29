@@ -3,8 +3,10 @@
 # 输出文件为 mathord.html
 #
 sed '/mathord/!d' unicode-math-table.tex > mathord.html
-# 删掉与其他脚本生成结果重复的内容
+
+# 数字部分单独用脚本生成了，删除之
 sed -i '/digit/d' mathord.html
+
 cut -f 1 -d"}" mathord.html > usv.tmp
 cut -f 2 -d'"' usv.tmp > tmpfile
 mv tmpfile usv.tmp

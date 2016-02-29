@@ -1,6 +1,7 @@
 #!/bin/sh
 # 生成粗体的 \mathfrak 字母对应的码表
 # 输出文件为 mfrak-mbf.html
+#
 sed '/mbffrak/!d' unicode-math-table.tex > mfrak-mbf.html
 cut -f 1 -d"}" mfrak-mbf.html > usv.tmp
 cut -f 2 -d'"' usv.tmp > tmpfile
