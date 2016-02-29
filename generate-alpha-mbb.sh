@@ -3,7 +3,6 @@
 # 输出文件为 alpha-mbb.html
 #
 sed -e '/[\]Bbb/!d' -e '/mathalpha/!d' unicode-math-table.tex > alpha-mbb.html
-sed -i '/digit/d' alpha-mbb.html
 cut -f 1 -d"}" alpha-mbb.html > usv.tmp
 cut -f 2 -d'"' usv.tmp > tmpfile
 mv tmpfile usv.tmp
