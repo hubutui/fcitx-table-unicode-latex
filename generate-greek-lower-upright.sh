@@ -14,5 +14,8 @@ sed -i 's/}//' value.tmp
 sed -i 's/up//' value.tmp
 paste -d" " value.tmp usv.tmp > greek-lower-upright.html
 
+# 删除错误匹配的大写字母
+sed -i '/var[A-Z][a-z]/d' greek-lower-upright.html
+
 # 最后的清理工作
 rm -f *.tmp
