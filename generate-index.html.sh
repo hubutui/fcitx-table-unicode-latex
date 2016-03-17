@@ -44,10 +44,14 @@ cat mscr-mbf.html >> index-mscr.html
 cat number-arabic-mbb.html > index-number-arabic.html
 cat number-arabic-mbf.html >> index-number-arabic.html
 cat number-arabic-mtt.html >> index-number-arabic.html
+cat number-arabic-msans.html >> index-number-arabic.html
+cat number-arabic-mbfsans.html >> index-number-arabic.html
 
 cat number-eng-mbb.html > index-number-eng.html
 cat number-eng-mbf.html >> index-number-eng.html
 cat number-eng-mtt.html >> index-number-eng.html
+cat number-eng-msans.html >> index-number-eng.html
+cat number-eng-mbfsans.html >> index-number-eng.html
 
 cat greek-lower-mbfitsans.html > index-sans.html
 cat greek-lower-mbfsans.html >> index-sans.html
