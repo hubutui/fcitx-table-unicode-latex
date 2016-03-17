@@ -33,6 +33,7 @@ cat alpha-mbb.html >> index.html
 cat misc.html >> index.html
 cat subscripts-and-superscripts.html >> index.html
 cat fractions.html >> index.html
+cat alias.html >> index.html
 
 cat mcal-upright.html > index-mcal.html
 cat mcal-mbf.html >> index-mcal.html
